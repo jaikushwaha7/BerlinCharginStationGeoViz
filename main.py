@@ -1,6 +1,6 @@
 
-currentWorkingDirectory = "https://raw.githubusercontent.com/jaikushwaha7/BerlinCharginStationGeoViz/refs/heads/main"
-#currentWorkingDirectory = "/mount/src/berlingeoheatmap1/"
+# currentWorkingDirectory = "https://raw.githubusercontent.com/jaikushwaha7/BerlinCharginStationGeoViz/refs/heads/main"
+currentWorkingDirectory = "/mount/src/BerlinCharginStationGeoViz/"
 
 # -----------------------------------------------------------------------------
 import os
