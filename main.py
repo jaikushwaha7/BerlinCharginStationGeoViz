@@ -1,9 +1,10 @@
 
-# currentWorkingDirectory = "https://raw.githubusercontent.com/jaikushwaha7/BerlinCharginStationGeoViz/refs/heads/main"
-currentWorkingDirectory = "/mount/src/BerlinCharginStationGeoViz/"
+
+# currentWorkingDirectory = "/mount/src/BerlinCharginStationGeoViz/"
 
 # -----------------------------------------------------------------------------
 import os
+currentWorkingDirectory = "https://raw.githubusercontent.com/jaikushwaha7/BerlinCharginStationGeoViz/refs/heads/main/datasets/"
 
 import pandas                        as pd
 from core import methods             as m1
@@ -16,13 +17,13 @@ from config                          import pdict
 def main():
     """Main: Generation of Streamlit App for visualizing electric charging stations & residents in Berlin"""
 
-    df_geodat_plz   = pd.read_csv(f'{currentWorkingDirectory}\datasets\geodata_berlin_plz.csv',delimiter=';')#
+    df_geodat_plz   = pd.read_csv(f'{currentWorkingDirectory}/geodata_berlin_plz.csv',delimiter=';')#
     
-    df_lstat        = pd.read_csv(f'{currentWorkingDirectory}\datasets\Ladesaeulenregister.csv',delimiter=';')#
+    df_lstat        = pd.read_csv(f'{currentWorkingDirectory}/Ladesaeulenregister.csv',delimiter=';')#
     df_lstat2       = m1.preprop_lstat(df_lstat, df_geodat_plz, pdict)#
     gdf_lstat3      = m1.count_plz_occurrences(df_lstat2)#
     
-    df_residents    = pd.read_csv(f'{currentWorkingDirectory}\datasets\plz_einwohner.csv')##
+    df_residents    = pd.read_csv(f'{currentWorkingDirectory}/plz_einwohner.csv')##
     gdf_residents2  = m1.preprop_resid(df_residents, df_geodat_plz, pdict)
     
 # -----------------------------------------------------------------------------------------------------------------------
