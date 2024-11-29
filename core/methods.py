@@ -195,8 +195,8 @@ def make_streamlit_electric_Charging_resid(dfr1, dfr2):
             ).add_to(m)
 
         # Display the dataframe for Numbers
-        # st.subheader('Numbers Data')
-        # st.dataframe(gdf_lstat3)
+        st.subheader('Numbers Data')
+        st.dataframe(gdf_lstat3)
 
     # Add color map to the map
     color_map.add_to(m)
