@@ -4,8 +4,6 @@ currentWorkingDirectory = "https://raw.githubusercontent.com/jaikushwaha7/Berlin
 
 # -----------------------------------------------------------------------------
 import os
-os.chdir(currentWorkingDirectory)
-print("Current working directory\n" + os.getcwd())
 
 import pandas                        as pd
 from core import methods             as m1
