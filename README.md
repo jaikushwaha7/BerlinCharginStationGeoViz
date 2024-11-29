@@ -3,14 +3,10 @@ Contains the visualization of population density and electric charging station i
 
 ## Code Structure Description
 
-![alt text](image.png) 
-1. **Core Functionality (core folder)**:
-HelperTools.py: Contains helper functions for general utilities, like timing functions.
-methods.py: Contains core functions for data preprocessing and analysis. This includes data preparation steps for electric charging stations, geographical data, and population data. It also includes visualization logic.
-2. **Datasets (datasets folder)**:
-Contains various data files used for analysis:geodata_berlin_plz.csv: Geographical data of Berlin by postal code. Ladesaeulenregister.csv: Data about electric charging stations. plz_einwohner.csv: Population data by postal code.
-3. **Configuration (config.py)** This file likely contains parameters or configurations used throughout the application to ensure consistent behavior.
-4. **Main Application (main.py)** This is the main driver script that reads the data, processes it, and visualizes the results using a Streamlit web app. It integrates multiple data sources and runs preprocessing functions to generate geovisualizations. Uses functions from the core package to load, clean, and analyze the data.
+
+| Code Structure      | Description | 
+| :---        |    :----  |   
+<img src="./images/image.png" width="500" /> |<ul><li> **Core Functionality (core folder)**: HelperTools.py: Contains helper functions for general utilities, like timing functions.    methods.py: Contains core functions for data preprocessing and analysis. This includes data preparation steps for electric charging stations, geographical data, and population data. It also includes visualization logic. </li><li>**Datasets (datasets folder)**:    Contains various data files used for analysis: geodata_berlin_plz.csv: Geographical data of Berlin by postal code. Ladesaeulenregister.csv: Data about electric charging stations. plz_einwohner.csv: Population data by postal code.</li><li>**Configuration (config.py)** This file likely contains parameters or configurations used throughout the application to ensure consistent behavior.</li><li> **Main Application (main.py)** This is the main driver script that reads the data, processes it, and visualizes the results using a Streamlit web app. It integrates multiple data sources and runs preprocessing functions to generate geovisualizations. Uses functions from the core package to load, clean, and analyze the data. </li></ul>|
 
 ## Documentation (The main flow of the application)
 1. Data Loading: main.py loads geographical, population, and charging station data from CSV files.
@@ -26,6 +22,8 @@ Counting the number of charging stations in each postal area.
 
 2. Heatmap 2: **Population Density**The second heatmap illustrates the population distribution by postal code. Red areas represent regions with the highest population.
 
-- ``` High Population with Low Charging Stations: Areas that are highlighted in red in the population heatmap but are yellow in the charging station heatmap indicate underserved regions. This suggests a high population with a low number of available electric charging stations.```![alt text](image-1.png)
+- ``` High Population with Low Charging Stations: Areas that are highlighted in red in the population heatmap but are yellow in the charging station heatmap indicate underserved regions. This suggests a high population with a low number of available electric charging stations.`
+
+  <img src="./images/image-1.png" width="500" />
 
 - ```Analysis of df1, df2, and df_demand pointed out areas with a mismatch between population density and charging station availability.```
