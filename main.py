@@ -1,5 +1,5 @@
 
-currentWorkingDirectory = "E:\\Study\\BHT\\AdvancedCS\\Assignment1\\berlingeoheatmap_project1-main\\"
+currentWorkingDirectory = "https://raw.githubusercontent.com/jaikushwaha7/BerlinCharginStationGeoViz/refs/heads/main"
 #currentWorkingDirectory = "/mount/src/berlingeoheatmap1/"
 
 # -----------------------------------------------------------------------------
